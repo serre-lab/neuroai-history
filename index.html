@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NeuroAI: a history</title>
+<script>
+// The page's public home is the standalone site. A copy served from the course
+// site bounces direct visitors there, but keeps working inside the lecture iframe.
+if (top === self && /github\.io$/.test(location.host) && !/^\/neuroai-history/.test(location.pathname))
+  location.replace('https://serre-lab.github.io/neuroai-history/' + location.hash);
+</script>
 <meta name="description" content="Neuroscience and AI, 1943–today: an interactive history of convergence and divergence. Every event links to its primary source.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Neuroscience and AI: a history of convergence and divergence, 1943–today">
